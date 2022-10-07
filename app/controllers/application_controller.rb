@@ -1,9 +1,14 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-  # Add your routes here
-  get "/" do
-    { message: "Good luck with your project!" }.to_json
+  # Returns all portfolios
+  get "/portfolios" do
+    portfolio = Portfolio.all
+    portfolio.to_json
   end
 
+  get "/portfolios/id" do
+    portfolio = Portfolio.find(params[:id])
+    portfolio.to_json
+  end
 end
