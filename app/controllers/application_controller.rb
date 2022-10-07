@@ -7,11 +7,11 @@ class ApplicationController < Sinatra::Base
     portfolio.to_json(include: {projects: {include: [:photos, :links]}})
   end
 
-  # Returns portfolios by id
-  get "/portfolios/:id" do
-    portfolio = Portfolio.find(params[:id])
-    portfolio.to_json(include: {projects: {include: [:photos, :links]}})
-  end
+  # # Returns portfolios by id
+  # get "/portfolios/:id" do
+  #   portfolio = Portfolio.find(params[:id])
+  #   portfolio.to_json(include: {projects: {include: [:photos, :links]}})
+  # end
 
   # Returns only website portfolio data
   get "/portfolios/website" do

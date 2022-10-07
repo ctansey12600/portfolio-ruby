@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2022_10_07_172316) do
   create_table "photos", force: :cascade do |t|
     t.string "alt"
     t.string "thumbnail"
-    t.string "origional"
+    t.string "original"
     t.string "location"
     t.integer "project_id"
     t.datetime "created_at", precision: 6, null: false
