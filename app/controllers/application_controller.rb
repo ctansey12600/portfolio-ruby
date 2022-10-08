@@ -19,9 +19,19 @@ class ApplicationController < Sinatra::Base
     portfolio.to_json(include: {projects: {include: [:photos, :links]}})
   end
 
-  get "/questions" do
-    question = Question.all
-    question.to_json(include: :user)
+  post "/questions" do
+    user = User.create(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email]
+    )
+
+    question = Question.create(
+      question: params[:question],
+      user_id: user.id
+    )
+
+    question.to_json
   end
 
 end
