@@ -26,6 +26,7 @@ class ApplicationController < Sinatra::Base
     question.to_json(include: :user)
   end
 
+  # Creates questions and user on submit
   post "/questions" do
     user = User.create(
       first_name: params[:first_name],
