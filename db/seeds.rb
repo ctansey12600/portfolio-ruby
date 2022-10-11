@@ -840,6 +840,6 @@ end
 # Question Testing Data
 
 user = User.create(first_name: "Casey", last_name: "Tansey", email: "ctansey12600@outlook.com")
-Question.create(question: "Can you send me your resume?", user_id: user.id)
+Question.create(question: "Example Question?", answer: "example answer", user_id: user.id)
 
 puts "✅ Done seeding!"
