@@ -1,22 +1,15 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
 
-  # Returns by name match rather than id to ensure that loaded info is the same regardless if id where to change
-  # Returns only website portfolio data
-  get "/portfolios/website" do
-    portfolio = Portfolio.find_by(name: 'Website Development')
+  #Returns all portfolios
+  get "/portfolios" do
+    portfolio = Portfolio.all
     portfolio.to_json(include: {projects: {include: [:photos, :links]}})
   end
 
-  # Returns only graphic portfolio data
-  get "/portfolios/graphic" do
-    portfolio = Portfolio.find_by(name: 'Graphic Design')
-    portfolio.to_json(include: {projects: {include: [:photos, :links]}})
-  end
-
-  # Returns only blog portfolio data
-  get "/portfolios/blog" do
-    portfolio = Portfolio.find_by(name: 'Blog')
+  #Returns portfolio by id
+  get "/portfolios/:id" do
+    portfolio = Portfolio.find(params[:id])
     portfolio.to_json(include: {projects: {include: [:photos, :links]}})
   end
 
@@ -28,7 +21,7 @@ class ApplicationController < Sinatra::Base
 
   # Creates questions and user on submit
   post "/questions" do
-    user = User.create(
+    user = User.find_or_create_by(
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email]
