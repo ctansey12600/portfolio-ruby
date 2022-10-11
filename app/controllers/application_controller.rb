@@ -41,4 +41,21 @@ class ApplicationController < Sinatra::Base
     question.to_json
   end
 
+  delete '/questions/:id' do
+    # find the question using the ID
+    question = Question.find(params[:id])
+    # delete the question
+    question.destroy
+    # send a response with the deleted question as JSON
+    question.to_json
+  end
+
+  patch '/questions/:id' do
+    question = Question.find(params[:id])
+    question.update(
+     question: params[:question]
+    )
+    question.to_json
+  end
+
 end
