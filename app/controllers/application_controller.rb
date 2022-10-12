@@ -16,11 +16,12 @@ class ApplicationController < Sinatra::Base
   # Returns all questions
   get "/questions" do
     question = Question.all
-    question.to_json(include: :user)
+    question.to_json(include: {user: { only: [:first_name, :user_id] }})
   end
 
   # Creates questions and user on submit
   post "/questions" do
+
     user = User.find_or_create_by(
       first_name: params[:first_name],
       last_name: params[:last_name],
@@ -32,7 +33,7 @@ class ApplicationController < Sinatra::Base
       user_id: user.id
     )
 
-    question.to_json
+    question.to_json(include: {user: { only: [:first_name, :user_id] }})
   end
 
   delete '/questions/:id' do
