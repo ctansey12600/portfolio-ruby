@@ -50,7 +50,7 @@ class ApplicationController < Sinatra::Base
     question.update(
      question: params[:question]
     )
-    question.to_json
+    question.to_json(include: {user: { only: [:first_name, :user_id] }})
   end
 
 end
