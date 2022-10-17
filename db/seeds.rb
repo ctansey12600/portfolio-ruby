@@ -4,8 +4,8 @@ puts "🌱 Seeding spices..."
 web_data = [
   {
   name: "The Anonymous Artist", 
-  languages: "JAVASCRIPT, CANVA, PROCREATE, HTML/CSS ", 
-  date_made: "2021", 
+  languages: "JavaScript, Canva, ProCreate, HTML/CSS ", 
+  date_made: 2021, 
   purpose: "The purpose of developing this website, was to create my first website! As the first project, I decided to dive into one of my hobbies which is art. I wanted to 'create' an environment that would allow creators work to be uploaded and seen regardless of status.",
   photos: [
     {
@@ -50,8 +50,8 @@ web_data = [
   },
   {
     name: "Casey Tansey Portfolio",
-    languages: "REACT, FIGMA, ADOBE EXPRESS, HTML/CSS, SASS, REACT",
-    date_made: "2022",
+    languages: "React, Figma, Adobe Express, HTML/CSS",
+    date_made: 2022,
     purpose: "The purpose of developing this website was to show attributions of myself through design. This fits in terms of color scheme, typography, and overall layout and aesthetic.",
     photos: [
     {
@@ -123,7 +123,7 @@ web_data = [
   links: [
     {
       name: "Casey Tansey Portfolio",
-      url: "https://casey-tansey-portfolio.vercel.app/"
+      url: ""
     },
     {
       name: "Github",
@@ -137,7 +137,7 @@ web_data = [
   {
     name: "Album Cover",
     languages: "Procreate, Illustrator, Adobe Express",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Graphics Communication class. For one of the assignments, I was tasked with redesigning an album cover for an artist of our choice. I choose Natalia Lafourcade to demonstrate a strong women fighting back against the persecution of women in society.",
     photos: [
     {
@@ -216,7 +216,7 @@ web_data = [
   {
     name: "Travel Icons",
     languages: "Procreate, Illustrator, Adobe Express",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Graphics Communication class. For one of the assignments, I was tasked with designing travel icons for a country of choice. I choose Mexico and decided to make icons that demonstrated the most popular icons within each of the top twelve populated cities of Mexico.",
     photos: [
     {
@@ -259,7 +259,7 @@ web_data = [
   {
     name: "Movie Poster",
     languages: "Procreate, Illustrator, Adobe Express",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Graphics Communication class. For one of the assignments, I was tasked with redesigning a movie poster within the thriller category. I choose Level 16 and designed a poster that represents a vitamin that will enhances the qualities of a good and clean girl.",
     photos: [
     {
@@ -338,7 +338,7 @@ web_data = [
   {
     name: "Bus Poster",
     languages: "Procreate, Illustrator, Adobe Express",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Graphics Communication class. For one of the assignments, I was tasked with creating a poster for Netflix that would be displayed at a bus stop. When creating this design, I had to make sure that it appealed to a younger audience. This is why I choose a comical style and added comic relief to a hot topic for Netflix.",
     photos: [
     {
@@ -435,7 +435,7 @@ web_data = [
   {
     name: "Green Logo",
     languages: "Procreate, Illustrator, Adobe Express",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Graphics Communication class. For one of the assignments, I was tasked with creating a logo that would represent the ideals of an environmentally 'green' company. After coming up with a company name, color scheme, icons, and typography, this poster represents a company that shows love for the environment with just the logo.",
     photos: [
     {
@@ -478,7 +478,7 @@ web_data = [
   {
     name: "Portrait",
     languages: "Procreate",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created as gift for my friends' graduation gifts. I wanted to be able to capture a memory in a different way rather than a traditional photo.",
     photos: [
     {
@@ -497,7 +497,7 @@ web_data = [
   {
     name: "Date Night",
     languages: "Procreate",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for my boyfriend as a way to remember a special night between us.",
     photos: [
     {
@@ -516,7 +516,7 @@ web_data = [
   {
     name: "Drinks Map",
     languages: "Canva",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Creative Design class. For one of the assignments, I was tasked with creating a map while also having creative design qualities.",
     photos: [
     {
@@ -535,7 +535,7 @@ web_data = [
   {
     name: "Great Migration",
     languages: "Canva, Procreate",
-    date_made: "2022",
+    date_made: 2022,
     purpose: "This graphic was created for a Creative Design class. For one of the assignments, a team member and I had to create a storyline through graphic designs only. From this, we ended up creating the story of 'The Great Migration'.",
     photos: [
     {
@@ -584,7 +584,7 @@ web_data = [
   {
     name: "Costume Contest",
     languages: "Canva",
-    date_made: "2020",
+    date_made: 2020,
     purpose: "This graphic was created for a former employer to advertise a costume contest for pets that was be held at the company.",
     photos: [
     {
@@ -603,7 +603,7 @@ web_data = [
   {
     name: "Thank You",
     languages: "Canva",
-    date_made: "2020",
+    date_made: 2020,
     purpose: "This graphic was created for a former employer as a thank you to customers during the holiday season.",
     photos: [
     {
@@ -622,7 +622,7 @@ web_data = [
   {
     name: "Thank You",
     languages: "Canva",
-    date_made: "2021",
+    date_made: 2021,
     purpose: "This graphic was created for a former employer as a thank you to a rescue group.",
     photos: [
     {
@@ -641,7 +641,7 @@ web_data = [
   {
     name: "Taco Sale",
     languages: "Canva",
-    date_made: "2020",
+    date_made: 2020,
     purpose: "This graphic was created for a friend that participated in a local organization on our college campus. To help advertise the sale, I was tasked with making posters to distributed around campus.",
     photos: [
     {
@@ -660,7 +660,7 @@ web_data = [
   {
     name: "Color-for-Cure",
     languages: "Indesign, Photoshop",
-    date_made: "2018",
+    date_made: 2018,
     purpose: "This graphic was created to advertise a 5k that I hosted to support research into a cure for Juvenile Arthritis. The idea stemmed from my own niece's body being damaged from the illness. After hosting the 5k with over 100 participants, I, along with the other members of my team, were able to raise 2,000 to go towards the Arthritis Foundation.",
     photos: [
     {
@@ -679,7 +679,7 @@ web_data = [
   {
     name: "Santa Pictures",
     languages: "Indesign, Photoshop",
-    date_made: "2017",
+    date_made: 2017,
     purpose: "This graphic was created to advertise a Pictures with Santa event that would take donations for our local Angel Tree.",
     photos: [
     {
@@ -702,7 +702,7 @@ blog_data = [
   {
   name: "Using Styled-Components", 
   languages: "", 
-  date_made: "Aug. 19, 2022", 
+  date_made: "2022/08/19", 
   purpose: "While Phase 2 comes to a close, I found myself struggling with CSS rather than React or Javascript. One element that I knew I wanted in my…",
   photos: [
     {
@@ -720,7 +720,7 @@ blog_data = [
   {
   name: "Creating My First Project", 
   languages: "", 
-  date_made: "Oct. 5, 2021", 
+  date_made: "2021/10/05", 
   purpose: "Throughout my course at Flatiron school, I have come across challenges while learning, but I have been able to resolve each as they have…",
   photos: [
     {
@@ -738,7 +738,7 @@ blog_data = [
   {
   name: "Doing a 180 on life...", 
   languages: "", 
-  date_made: "Oct. 1, 2021", 
+  date_made: "2021/10/01", 
   purpose: "In life, sometimes it almost feels like we are all following this desired path of going to college, getting a “good” job, and then starting…",
   photos: [
     {
