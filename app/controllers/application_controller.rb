@@ -48,7 +48,8 @@ class ApplicationController < Sinatra::Base
   patch '/questions/:id' do
     question = Question.find(params[:id])
     question.update(
-     question: params[:question]
+     question: params[:question],
+     answer: params[:answer]
     )
     question.to_json(include: {user: { only: [:first_name, :user_id] }})
   end
