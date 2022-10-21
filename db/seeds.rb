@@ -50,7 +50,7 @@ web_data = [
   },
   {
     name: "Casey Tansey Portfolio",
-    languages: "React, Figma, Adobe Express, HTML/CSS",
+    languages: "React, Ruby, Active Record, Sinatra Figma, Adobe Express, HTML/CSS",
     date_made: 2022,
     purpose: "The purpose of developing this website was to show attributions of myself through design. This fits in terms of color scheme, typography, and overall layout and aesthetic.",
     photos: [
@@ -123,11 +123,11 @@ web_data = [
   links: [
     {
       name: "Casey Tansey Portfolio",
-      url: ""
+      url: "http://localhost:3000/"
     },
     {
       name: "Github",
-      url: "https://github.com/ctansey12600/casey-tansey-portfolio"
+      url: "https://github.com/ctansey12600/portfolio-full-stack"
     }]
   }
  ]
@@ -699,6 +699,24 @@ web_data = [
 
 #  Blog Data
 blog_data = [
+  {
+  name: "Building a Sinatra API", 
+  languages: "", 
+  date_made: "2022/10/21", 
+  purpose: "While Phase 3 comes to a close, I found myself struggling over the smaller details rather than the big picture. One of the main issues…",
+  photos: [
+    {
+      alt: "screenshot of blog post",
+      thumbnail: "https://i.ibb.co/0F1h99g/Screenshot-2022-10-21-at-4-11-02-PM.png",
+      original: "",
+      location: "info"
+    }],
+  links: [
+    {
+      name: "Building a Sinatra API with Active Record Tips and Tricks!",
+      url: "https://medium.com/@ctansey12600/building-a-sinatra-api-with-active-record-tips-and-tricks-3614fcdc4c4f"
+    }]
+  },
   {
   name: "Using Styled-Components", 
   languages: "", 
