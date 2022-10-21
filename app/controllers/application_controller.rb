@@ -1,26 +1,39 @@
 class ApplicationController < Sinatra::Base
-  set :default_content_type, 'application/json'
+  set :default_content_type, "application/json"
 
   #Returns all portfolios
-  get "/portfolios" do
+  get '/portfolios' do
     portfolio = Portfolio.all
     portfolio.to_json(include: {projects: {include: [:photos, :links]}})
   end
 
   #Returns portfolio by id
-  get "/portfolios/:id" do
+  get '/portfolios/:id' do
     portfolio = Portfolio.find(params[:id])
     portfolio.to_json(include: {projects: {include: [:photos, :links]}})
   end
 
+  # Finds Portfolio by name and then returns most recent project id
+  get '/portfolios/recentProject/:name' do
+    portfolio = Portfolio.includes(:projects).find_by(name: params[:name],)
+    recent = portfolio.projects.first
+    recent.to_json(only: :id)
+  end
+
+  # Finds Portfolio by name and then returns most liked project id
+  get '/projects/myFavorite/:name' do
+    project = Project.find_by(name: params[:name],)
+    project.to_json(only: :id)
+  end
+
   # Returns all questions
-  get "/questions" do
+  get '/questions' do
     question = Question.all
     question.to_json(include: {user: { only: [:first_name, :user_id] }})
   end
 
   # Creates questions and user on submit
-  post "/questions" do
+  post '/questions' do
 
     user = User.find_or_create_by(
       first_name: params[:first_name],

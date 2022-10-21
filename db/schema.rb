@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_11_141026) do
+ActiveRecord::Schema.define(version: 2022_10_21_034910) do
 
   create_table "links", force: :cascade do |t|
     t.string "name"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2022_10_11_141026) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "portfolio_id"
+    t.integer "likes"
   end
 
   create_table "questions", force: :cascade do |t|
