@@ -41,9 +41,9 @@ class ApplicationController < Sinatra::Base
       email: params[:email]
     )
 
-    question = Question.create(
-      question: params[:question],
-      user_id: user.id
+    question = user.questions.create(
+      question: params[:question]
+      # user_id: user.id
     )
 
     question.to_json(include: {user: { only: [:first_name, :user_id] }})
